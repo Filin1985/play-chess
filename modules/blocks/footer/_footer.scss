@@ -1,0 +1,33 @@
+.footer {
+  background-color: $people-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    padding: 60px 0 20px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 0;
+
+    @media screen and (max-width: $between_size) {
+      & {
+        font-size: 12px;
+        padding: 40px 0 10px 0;
+      }
+    }
+  }
+
+  &__club {
+    padding-bottom: 80px;
+    margin: 0;
+
+    @media screen and (max-width: $between_size) {
+      & {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

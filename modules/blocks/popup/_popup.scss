@@ -1,0 +1,107 @@
+.popup {
+  background-color: $black-color;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__button {
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 50px 0 78px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 90%;
+
+    @media screen and (max-width: $small-size) {
+      & {
+        padding: 40px 0 40px 0;
+      }
+    }
+  }
+
+  &_opened {
+    display: block;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    max-width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    width: 500px;
+    height: 48px;
+    background-color: $darkgrey-color;
+    color: $white-color;
+    border-radius: 8px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0 auto;
+    outline: none;
+    text-indent: 18px;
+
+    &:focus {
+      outline: 1px solid $people-color;
+    }
+
+    &::placeholder {
+      color: $white-color;
+    }
+
+    &_el_name {
+      margin-bottom: 20px;
+
+      @media screen and (max-width: $small-size) {
+        & {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &_el_email {
+      margin-bottom: 253px;
+
+      @media screen and (max-width: $middle-size) {
+        & {
+          margin-bottom: 243px;
+        }
+      }
+
+      @media screen and (max-width: $small-size) {
+        & {
+          margin-bottom: 143px;
+        }
+      }
+    }
+
+    @media screen and (max-width: $premiddle-size) {
+      & {
+        width: 280px;
+        height: 42px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-style: normal;
+  font-family: 'Noto';
+  src: url(./Noto/noto_sans_regular.woff) format('woff'),
+    url(./Noto/noto_sans_regular.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-style: normal;
+  font-family: 'Noto';
+  src: url(./Noto/noto_sans_700.woff) format('woff'),
+    url(./Noto/noto_sans_700.woff2) format('woof2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-style: normal;
+  font-family: 'Noto';
+  src: url(./Noto/noto_sans_900.woff) format('woff'),
+    url(./Noto/noto_sans_900.woff2) format('woof2');
+  font-weight: 900;
+}

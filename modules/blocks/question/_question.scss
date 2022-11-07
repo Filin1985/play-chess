@@ -1,0 +1,123 @@
+.queston {
+  background-color: $people-color;
+
+  &__container {
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        padding: 50px 0;
+      }
+    }
+    @media screen and (max-width: 552px) {
+      & {
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+
+  &__semicircle {
+    max-width: 440px;
+    max-height: 440px;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  &__quadrant {
+    position: absolute;
+    left: 0;
+    top: 280px;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  &__circle {
+    background-image: url(../../../images/greencircle.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    margin-bottom: 0px;
+    height: 440px;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        background-image: url(../../../images/greensemicircle.png);
+        width: 300px;
+        height: 360px;
+      }
+    }
+    @media screen and (max-width: $small-size) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  &__box {
+    margin: 110px 0 0 100px;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        margin: 80px 0 0 0px;
+      }
+    }
+
+    @media screen and (max-width: $small-size) {
+      & {
+        margin: 20px 0 0 0px;
+      }
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90%;
+    margin-bottom: 0px;
+    margin-top: 0;
+
+    @media screen and (max-width: 552px) {
+      & {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    padding-top: 40px;
+
+    @media screen and (max-width: $premiddle-size) {
+      & {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $between_size) {
+    &__bottom {
+      background-image: url(../../../images/Group345.png);
+      background-repeat: no-repeat;
+      width: 280px;
+      height: 140px;
+    }
+  }
+}

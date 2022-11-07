@@ -1,0 +1,43 @@
+.button {
+  background-color: $green-color;
+  border-radius: 8px;
+  color: $white-color;
+  border: none;
+  width: 218px;
+  height: 48px;
+
+  &:hover {
+    background-color: $darkgreen-color;
+  }
+
+  @media screen and (max-width: $between_size) {
+    & {
+      width: 140px;
+      height: 30px;
+
+      &_size_small {
+        width: 108px;
+        height: 18px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $middle-size) {
+    &_size_small {
+      width: 184px;
+      height: 44px;
+    }
+  }
+
+  @media screen and (max-width: $middle-size) {
+    &_place_popup {
+      margin-bottom: 200px;
+    }
+  }
+
+  @media screen and (max-width: $small-size) {
+    &_place_popup {
+      margin-bottom: 120px;
+    }
+  }
+}

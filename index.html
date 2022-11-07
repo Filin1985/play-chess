@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Сайт о шахматном клубе в Москве" />
+    <meta name="keywords" content="Шахматы, образование, развитие" />
+    <meta name="author" content="Nadegda Ikhsanova" />
+    <title>ChessClub</title>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__box">
+        <img
+          class="logo logo_place_header"
+          src="./images/chess.png"
+          alt="Логотип Шахматы"
+        />
+        <div class="header__buttons">
+          <a class="header__link" href="#"
+            >Вступайте в клуб
+            <img
+              class="header__vector"
+              src="./images/vector21.png"
+              alt="Стрелка"
+            />
+          </a>
+          <button class="button button_size_small">Зарегистрироваться</button>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="chess">
+        <div class="chess__container">
+          <div class="chess__box">
+            <div class="chess__items">
+              <img class="chess__club" src="./images/date.png" alt="клуб" />
+              <div class="chess__item"></div>
+            </div>
+            <h1 class="chess__name">Правильные шахматы</h1>
+            <p class="chess__text">
+              Приходите к нам, играть в шахматы! Сразитесь в классическом
+              поединке, блиц состязании и бою с гройсмейстером.
+            </p>
+            <img
+              class="chess__board"
+              src="./images/group333.png"
+              alt="шахматная доска"
+            />
+          </div>
+          <div class="chess__circle"></div>
+        </div>
+      </section>
+
+      <section class="slider" id="team">
+        <h2 class="slider__title">Наша команда</h2>
+        <p class="slider__text">
+          Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними
+          играть — одно удовольствие!
+        </p>
+        <ul class="slider__container">
+          <li class="slider__man slider__man_show_active">
+            <img class="slider__photo" src="./images/photo1.png" alt=" фото" />
+            <h4 class="slider__name">Андрей</h4>
+            <p class="slider__profession">Шахматист, писатель.</p>
+          </li>
+
+          <li class="slider__man">
+            <img class="slider__photo" src="./images/photo2.png" alt=" фото" />
+            <h4 class="slider__name">Никита</h4>
+            <p class="slider__profession">Шахматист, кулинар.</p>
+          </li>
+
+          <li class="slider__man">
+            <img class="slider__photo" src="./images/photo3.png" alt=" фото" />
+            <h4 class="slider__name">Алексей</h4>
+            <p class="slider__profession">Шахматист, геймер.</p>
+          </li>
+        </ul>
+        <div class="slider__dots">
+          <span class="slider__dot slider__dot_show_active"></span>
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+        </div>
+      </section>
+      <section class="queston">
+        <div class="queston__container">
+          <img
+            class="queston__semicircle"
+            src="./images/group336.png"
+            alt="черный полукруг"
+          />
+          <img
+            class="queston__quadrant"
+            src="./images/vector.png"
+            alt="четверть круга"
+          />
+          <div class="queston__circle"></div>
+          <div class="queston__box">
+            <h2 class="queston__title">Хочешь в команду?</h2>
+            <p class="queston__text">
+              Свяжись с нами и мы обсудим все детали присоеденения к команде.
+            </p>
+            <div class="queston__bottom"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider slider_colour_black" id="buttle">
+        <h2 class="slider__title">Сражения</h2>
+        <p class="slider__text">
+          Сражайтесь в парах и приятно проводите время. Если хотите прокачать
+          свои навыки — сыграйте с нашими шахматистами.
+        </p>
+        <ul class="slider__container slider__container_padding_zero">
+          <li class="slider__man slider__man_show_active">
+            <img
+              class="slider__photo"
+              src="./images/photo4.png"
+              alt="игра в шахматы"
+            />
+          </li>
+          <li class="slider__man">
+            <img
+              class="slider__photo"
+              src="./images/photo5.png"
+              alt="игра в шахматы"
+            />
+          </li>
+          <li class="slider__man">
+            <img
+              class="slider__photo"
+              src="./images/photo6.png"
+              alt="игра в шахматы"
+            />
+          </li>
+        </ul>
+        <div class="slider__dots">
+          <span class="slider__dot slider__dot_show_active"></span>
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+        </div>
+        <div class="slider__img">
+          <div class="slider__semicircle"></div>
+          <img
+            class="chess__board chess__board_colour_green"
+            src="./images/group333green.png"
+            alt="шахматная доска"
+          />
+        </div>
+      </section>
+      <section class="popup">
+        <div class="popup__container">
+          <img
+            class="logo logo_place_popup"
+            src="./images/chess.png"
+            alt="Логотип Шахматы"
+          />
+          <h3 class="popup__title">Регистрация</h3>
+          <form class="popup__form">
+            <input
+              class="popup__item popup__item_el_name"
+              type="text"
+              name="firstname"
+              placeholder="Имя"
+            />
+            <input
+              class="popup__item popup__item_el_email"
+              type="text"
+              name="email"
+              placeholder="Email"
+            />
+            <button class="button button_place_popup">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img
+        class="logo logo_place_footer"
+        src="./images/chess.png"
+        alt="Логотип Шахматы"
+      />
+      <button class="button">Зарегистрироваться</button>
+      <p class="footer__text">Шахматный клуб в Москве.</p>
+      <p class="footer__club">&copy;Chees Club.</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

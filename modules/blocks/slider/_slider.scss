@@ -1,0 +1,210 @@
+.slider {
+  background-color: $people-color;
+
+  &__title {
+    padding: 80px 0 40px 160px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90%;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        padding: 50px 0 40px 50px;
+      }
+    }
+
+    @media screen and (max-width: $premiddle-size) {
+      & {
+        padding: 20px;
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    padding: 0 0 110px 160px;
+    width: 500px;
+    margin: 0;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        padding: 0 0 140px 50px;
+      }
+    }
+
+    @media screen and (max-width: $premiddle-size) {
+      & {
+        padding: 0 20px 60px 20px;
+        font-size: 12px;
+        width: 280px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding-bottom: 80px;
+    margin: 0 0 0 160px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &_padding_zero {
+      padding-bottom: 0px;
+    }
+
+    @media screen and (max-width: $big-size) {
+      & {
+        overflow: hidden;
+      }
+    }
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        gap: 28px;
+        margin: 0 0 0 50px;
+        padding-bottom: 50px;
+      }
+    }
+
+    @media screen and (max-width: $premiddle-size) {
+      & {
+        margin: 0 0 0 20px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &__photo {
+    width: 320px;
+    height: 320px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: $between_size) {
+      & {
+        width: 280px;
+        height: 280px;
+        padding-bottom: 20px;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin: 0;
+
+    @media screen and (max-width: $between_size) {
+      & {
+        padding-bottom: 5px;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__profession {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+
+    @media screen and (max-width: $between_size) {
+      & {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+
+    @media screen and (max-width: 850px) {
+      & {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__semicircle {
+    margin-top: 44px;
+    background-image: url(../../../images/Group339.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 220px;
+
+    @media screen and (max-width: $middle-size) {
+      & {
+        background-image: url(../../../images/greenquadrant.png);
+        background-repeat: no-repeat;
+        margin-top: 10px;
+      }
+    }
+
+    @media screen and (max-width: $between_size) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  &_colour_black {
+    background-color: $black-color;
+  }
+
+  &__man {
+    padding-right: 0;
+    scroll-snap-align: start;
+
+    @media screen and (max-width: $between_size) {
+      & {
+        display: none;
+      }
+
+      &_show_active {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (max-width: $between_size) {
+    &__dots {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+    }
+    &__dot {
+      width: 8px;
+      height: 8px;
+      cursor: pointer;
+      background-color: $white-color;
+      border-radius: 50%;
+      opacity: 0.5;
+      transition: opacity 0.6s ease;
+    }
+    &__dot_show_active {
+      opacity: 1;
+    }
+  }
+}
